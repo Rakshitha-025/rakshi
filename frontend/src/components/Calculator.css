@@ -1,0 +1,134 @@
+html,
+body {
+    height: 100%;
+    /* Ensure the body takes full height */
+    margin: 10;
+    /* Remove default margin */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    background: #0a4174;
+}
+
+.custom-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align items to the start */
+    min-height: 100vh;
+    /* Full height of the viewport */
+    background-color: #127cdf;
+    /* Solid background color */
+    color: #ffffff;
+    text-align: center;
+}
+
+.calculator_page {
+    background-color: #0a4174;
+    /* Your desired background color */
+    background-image: none;
+    /* Ensuring no background image */
+}
+
+.calculator_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* One column by default */
+    gap: 30px;
+    /* Increase gap between calculator cards */
+    max-width: 100%;
+    width: 90%;
+    /* Slightly reduce width to fit within the frame */
+    padding: 20px;
+    /* Add padding to the container */
+}
+
+
+@media (min-width: 768px) {
+    .calculator_container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on medium screens */
+    }
+}
+
+.calculator_card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    /* Arrange items in a column */
+    justify-content: flex-start;
+    /* Align items to the start */
+    height: 100%;
+    /* Ensure the card takes full height */
+    align-items: center;
+    /* Center items horizontally */
+    margin: 10px 0;
+    /* Add vertical margin between cards */
+}
+input[type="number"],
+select {
+    border: 2px solid #ffffff; /* White border for inputs and selects */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Increased padding for better touch area */
+    width: 60%; /* Full width */
+    margin: 10px 0; /* Space between inputs */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background change on focus */
+    text-align: center; /* Center text within inputs */
+}
+
+input[type="number"]:focus,
+select:focus {
+    background-color: rgba(255, 255, 255, 0.4); /* Change background on focus */
+    outline: none; /* Remove outline */
+    color: #ffffff; /* Ensure text color remains white on focus */
+}
+
+input[type="number"]::placeholder,
+select::placeholder {
+    color: #ffffff; /* White color for placeholder text */
+    opacity: 1; /* Ensure the placeholder is fully opaque */
+}
+
+
+button {
+    background-color: #007bff;
+    /* Button color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 12px;
+    /* Increased padding */
+    width: 50%;
+    /* Adjusted button width */
+    margin: 10px auto;
+    /* Center button with margin */
+    font-size: 18px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition for hover effects */
+}
+
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(0);
+    /* Reset lift effect when clicked */
+}

@@ -1,0 +1,54 @@
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Flex container for side-by-side form and report card */
+.flex-container {
+    display: flex;
+    gap: 30px; /* Space between form and report card */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Form styling */
+.health-form {
+    background-color:rgba(11, 84, 153, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: -700px;
+}
+
+/* Report card container styling */
+.history-list {
+    background-color: rgba(11, 84, 153, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 500px; /* Limit the height for a clean look */
+    overflow-y: auto; /* Scroll if the content is long */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual history card styling */
+.history-card {
+    background-color: rgba(11, 84, 153, 0.85);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings and labels */
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}

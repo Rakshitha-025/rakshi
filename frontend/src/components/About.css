@@ -1,0 +1,76 @@
+/* Page-wide background image */
+.custom-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./pillperfect.png"); /* Ensure the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.contact_container {
+    background-color: rgba(11, 84, 153, 0.853);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    max-width: 100%;
+    width: 60%;
+    color: #ffffff;
+    margin: 20px auto;
+    margin-top: 7%;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; }
+
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+
+u {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+@media (max-width: 600px) {
+    .contact_container {
+        width: 90%;
+    }
+
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    p, ul li {
+        font-size: 1rem;
+    }
+}

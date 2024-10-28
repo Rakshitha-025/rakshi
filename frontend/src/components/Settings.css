@@ -1,0 +1,72 @@
+body{
+    position: relative;
+    height: 100vh;
+    background-image: url('./pillperfect.png');
+    background-size: cover;
+    background-position: center;
+}
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: lightgreen;
+    background-color: rgba(11, 84, 153, 0.85);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%; 
+    max-height: 90vh;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  h1, h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-width: 300px;
+    margin-left: 150px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 20%;
+    padding: 12px;
+    background-color: #0044cc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 250px;
+  }
+  
+  button:hover {
+    background-color: #003399;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  

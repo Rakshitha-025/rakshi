@@ -1,0 +1,76 @@
+/* Page-wide background image */
+.custom-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./pillperfect.png"); /* Ensure the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contact container styling */
+.contact_container {
+    background-color: rgba(11, 84, 153, 0.853); /* Semi-transparent blue background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;
+    max-width: 100%;
+    width: 60%; /* Adjust the width to fit well on the page */
+    color: #ffffff; /* Text color contrast */
+    margin: 20px auto;
+    margin-top: 7%;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Make sure the heading stands out */
+}
+
+/* Paragraph and subheading styling */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+/* List styling */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Underlined text */
+u {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .contact_container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, ul li {
+        font-size: 1rem;
+    }
+}
